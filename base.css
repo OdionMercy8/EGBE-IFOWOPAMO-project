@@ -13,6 +13,7 @@
 html{
     font-size: 62.5%;
     line-height: 1.7;
+    min-height: 100vh;
     font-family: 'dancing script';
 }
 
@@ -51,9 +52,9 @@ html{
 .body{
     font-size: 3rem;
     padding: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1.5rem;
 }
 
 .values{
@@ -114,18 +115,13 @@ html{
 
 .returns{
     display: flex;
+    align-items: center;
 }
 
 .header-1{
     font-size: 3rem;
     color: var(--pri-color);
     text-transform: uppercase;
-}
-
-.tier-1,
-.tier-2,
-.tier-3{
-    padding: 1rem;
 }
 
 .name-1,
@@ -193,8 +189,19 @@ html{
 .tier1,
 .tier2,
 .tier3{
-    /* border: .5px solid var(--pri-color); */
     border-bottom: 1px solid #ccc;
     margin-bottom: 1rem;
     padding: 1rem;
+}
+
+.close{
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+    fill: #7a2048;
+    transition: all .4s;
+}
+
+.close:active{
+    transform: translateY(3px);
 }
