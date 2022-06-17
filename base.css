@@ -1,0 +1,200 @@
+:root{
+    --pri-color:#7a2048;
+    --text-color:#1e2761;
+    --sec-color: #408ec6;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.7;
+    font-family: 'dancing script';
+}
+
+.title{
+    font-size: 5rem;
+    color: var( --sec-color);
+    text-transform: uppercase;
+}
+
+.display{
+    background-color: #ddd;
+    width: 100vw;
+    height: 40vh;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.income{
+    font-size: 3rem;
+    color: var(--pri-color);
+    text-transform: uppercase;
+}
+
+.amount{
+    font-size: 3rem;
+    color: var(--pri-color);
+    margin-left: 4rem;
+}
+
+.body{
+    font-size: 3rem;
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.values{
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tiers{
+    height: 3rem;
+    width: 10rem;
+    outline: none;
+    color: var(--pri-color);
+    font-size: 2rem;
+
+}
+
+.name{
+    height: 3rem;
+    outline: none;
+    border: .5px solid var(--pri-color);
+    color: var(--pri-color);
+    font-size: 2rem;
+    width: 50rem;
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+.name::placeholder{
+    font-size: 2rem;
+    columns: var(--pri-color);
+    text-transform: uppercase;
+    color: var(--pri-color);
+}
+
+.number{
+    height: 3rem;
+    outline: none;
+    border: .5px solid var(--pri-color);
+    color: var(--pri-color);
+    font-size: 2rem;
+    width: 20rem;
+    margin-left: 4rem;
+    padding: 1rem;
+}
+
+.number::placeholder{
+    font-size: 2rem;
+    columns: var(--pri-color);
+    text-transform: uppercase;
+    color: var(--pri-color);
+}
+
+.details{
+    display: flex;
+}
+
+.returns{
+    display: flex;
+}
+
+.header-1{
+    font-size: 3rem;
+    color: var(--pri-color);
+    text-transform: uppercase;
+}
+
+.tier-1,
+.tier-2,
+.tier-3{
+    padding: 1rem;
+}
+
+.name-1,
+.amount-1,
+.interest-1,
+.redraw-1{
+    padding-right: 2rem;
+    font-size: 3rem;
+    color: var(--pri-color);
+}
+
+.des-amount,
+.des-redraw,
+.des-interest,
+.des-name{
+    padding-right: 2rem;
+    font-size: 3rem;
+    color: blueviolet;
+}
+
+.header-2{
+    font-size: 3rem;
+    color: var(--sec-color);
+    text-transform: uppercase;
+}
+
+.name-2,
+.amount-2,
+.interest-2,
+.redraw-2{
+    padding-right: 2rem;
+    font-size: 3rem;
+    color: var(--sec-color);
+}
+
+.header-3{
+    font-size: 3rem;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.name-3,
+.amount-3,
+.interest-3,
+.redraw-3{
+    padding-right: 2rem;
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.key{
+    font-size: 3rem;
+    color: var(--pri-color);
+    border: 1px solid var(--pri-color);
+    text-transform: uppercase;
+    padding:  0 1rem;
+    position: relative;
+    transition: all .5s;
+}
+
+.key:active{
+    transform: translateY(2px);
+}
+
+.tier1,
+.tier2,
+.tier3{
+    /* border: .5px solid var(--pri-color); */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
